@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            x:Class="MauiAppNewBiAulas.Pages.TabPages.MainTabPage"
+            Title="Menu">
+
+    <ContentPage Title="Primeira Pagina"
+                 IconImageSource="dotnet_bot.png">
+        <ScrollView>
+
+            <Label Text="Primeira ContentPage"
+                   FontSize="Header"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center" />
+
+        </ScrollView>
+    </ContentPage>
+
+    <ContentPage Title="Grid Page"
+                 IconImageSource="logo_app.png">
+        <ScrollView>
+
+            <Label Text="Segunda Page - Grid"
+                   FontSize="Header"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center" />
+
+        </ScrollView>
+    </ContentPage>
+
+    <ContentPage Title="Navegação Page"
+                 IconImageSource="user_tablet.png">
+        <ScrollView>
+
+            <Label Text="Terceira Page - Navegação"
+                   FontSize="Header"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center" />
+
+        </ScrollView>
+    </ContentPage>
+
+    <!--Page inserindo video-->
+    <ContentPage Title="Video do Youtube">
+        <ScrollView>
+
+            <VerticalStackLayout>
+                <WebView Source="https://www.youtube.com/embed/Me1DX344Uz8?si=kAmi_lLKb02I5Hss"
+                         HorizontalOptions="Center"
+                         VerticalOptions="Center"
+                         Scale="0.75"
+                         WidthRequest="500"
+                         HeightRequest="280" />
+
+                <WebView x:Name="webViewPersonalizado"
+                         HorizontalOptions="Center"
+                         VerticalOptions="Center"
+                         Scale="0.75"
+                         WidthRequest="500"
+                         HeightRequest="280" />
+
+            </VerticalStackLayout>
+
+        </ScrollView>
+    </ContentPage>
+
+    <ContentPage Title="Quinta Page">
+        <ScrollView>
+
+            <VerticalStackLayout Spacing="10">
+                <Label Text="Quinta Page - Teste"
+                       FontSize="Header"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center" />
+
+                <Button x:Name="btnVoltarInicio"
+                        Text="Voltar Inicio"
+                        Clicked="btnVoltarInicio_Clicked" />
+            </VerticalStackLayout>
+
+        </ScrollView>
+    </ContentPage>
+</TabbedPage>

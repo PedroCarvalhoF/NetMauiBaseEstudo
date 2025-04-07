@@ -1,0 +1,16 @@
+﻿Propriedades da TabbedPage
+Propriedade	O que faz
+
+Title:	Altera o título da TabbedPage, geralmente exibido na barra de navegação ou no topo da tela.
+CurrentPage:	Obtém ou define a página atualmente selecionada (aba ativa). Pode ser usado para trocar a aba programaticamente.
+Children:	Coleção das páginas que compõem as abas. Você pode adicionar, remover ou reorganizar as abas aqui.
+BarBackgroundColor:	Define a cor de fundo da barra de abas.
+BarTextColor:	Define a cor do texto (títulos) das abas.
+SelectedTabColor:	Define a cor da aba quando está selecionada (MAUI).
+UnselectedTabColor:	Define a cor das abas que não estão selecionadas (MAUI).
+
+
+            BarBackgroundColor="Black"
+            BarTextColor="White"
+            SelectedTabColor="White"
+            UnselectedTabColor="Purple"
